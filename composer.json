@@ -1,4 +1,15 @@
 {
+    "name": "<vendor>/calendar",
+    "description": "calendar library",
+    "type": "library",
+    "version": "1.0.0",
+    "authors": [{
+        "name": "tyatyamaruko",
+        "email": "tyatyamaruko9981@gmail.com"
+    }],
+    "autoload": {
+        "psr-4": { "Calendar\\": "src/Calendar" }
+    },
     "require-dev": {
         "phpunit/phpunit": "^9.5"
     }
