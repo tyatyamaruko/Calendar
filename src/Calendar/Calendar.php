@@ -94,7 +94,7 @@ class Calendar
         $view = "<table>";
         $view .= "<tr>";
         foreach(range(0, 6) as $i) {
-            $view .= "<th class='cal-header'>$this->dayOfWeeks[$lang][$i]</th>";
+            $view .= "<th class='cal-header'>" . $this->dayOfWeeks[$lang][$i] . "</th>";
         }
         $view .= "</tr>";
         foreach($this->days as $weeks) {
