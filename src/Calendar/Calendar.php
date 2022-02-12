@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Calendar;
+namespace Calendar;
 
 class Calendar
 {
