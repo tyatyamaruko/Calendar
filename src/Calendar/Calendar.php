@@ -36,7 +36,7 @@ class Calendar
             $week[] = $day;
 
             // $day == satday or $day == $dayCOunt
-            if ($day % 7 == 5 || $day == $dayCount || count($week) % 7 != 0) {
+            if ($day == $dayCount || count($week) % 7 == 0) {
                 if ($day == $dayCount && count($week) % 7 != 0) {
                     $week = array_merge($week, explode(" ", trim(str_repeat('0 ', 7 - count($week) % 7))));
                 }
