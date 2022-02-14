@@ -1,6 +1,9 @@
 ## Introduction
 Calendar is sample library for PHP. This library helps your project, for example schedule manager, show casual calendar.
 
+## Release Note
+#### version 1.0.0 2022/02/14
+
 ## Install
 
 Just type the following command on the command line.
@@ -49,4 +52,4 @@ For February 2022, it will be displayed as follows. (No style will be assigned)
 |20|21|22|23|24|25|26|
 |27|28||||||
 
-If you want more customization, you can use the getDays() function to implement your own.
+If you want more customization, you can use the getDays() function to implement your own layout.
