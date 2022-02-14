@@ -24,13 +24,15 @@ class Calendar
         // get the days of month count
         if (!$dayCount = date('t', strtotime($date))) return false;
         // get frist of dayofweek at the month
-        if (!$dayOfWeek = date('w', strtotime($date . "-01"))) return false;
+        if (($dayOfWeek = date('w', strtotime($date . "-01"))) === false) return false;
 
         $weeks = [];
-        $week = "";
+        $week = [];
 
-        // fill with 0 from sunday to 1 dayofweek
-        $week = explode(" ", trim(str_repeat('0 ', $dayOfWeek)));
+        if ($dayOfWeek != 0) {
+            // fill with 0 from sunday to 1 dayofweek
+            $week = explode(" ", trim(str_repeat('0 ', $dayOfWeek)));
+        }
 
         foreach (range(1, $dayCount) as $day) {
             $week[] = $day;
