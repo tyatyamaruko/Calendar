@@ -14,6 +14,13 @@ composer require tyatyamaruko/calendar
 
 ## Usage
 
+Import
+```php
+<?php
+use Calendar\Calendar;
+?>
+```
+
 Create Instance
 
 ```php
